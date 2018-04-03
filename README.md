@@ -5,6 +5,8 @@ It is possible to book visits, display free dates and services in the salon. The
 about the most popular services. It is also possible to grant discounts to customers.
 User can register using standard registration.
 
+
+
 ## Getting Started
 
 1. Clone the repository.
@@ -19,13 +21,15 @@ Update-Database
 ```
 4. Run project. 
 
-## Technologies used
+## Technologies and libraries used
 - Web Api 2
 - Entity Framework 6
 - MSSQL database
 - NLog
 - Unity Container
 - AutoMapper 6
+- Moq, Effort
+
 
 ## Authorization
 
@@ -50,7 +54,8 @@ To authenticate user he must send Autorization header
 Authorization: Bearer 'token'
 ```
 
-
+## Unit testing
+Tests were written in standard .net unit testing library and Moq library. Effort was used to mock MSSQL database.
 
 
 ## Test login data
